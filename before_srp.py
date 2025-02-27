@@ -28,3 +28,8 @@ emp_obj_1.calculate_salary()
 emp_obj_1.save_to_database()
 emp_obj_1.generate_report()
 
+"""
+-> When you create an object (emp_obj_1) of the Employee class, it loads all instance attributes and methods defined in that class.
+-> If the Employee class directly contained methods like save_to_db() and generate_report(), then even if you don't use them, they are still part of the object, increasing memory usage.
+-> This would impact memory efficiency and potentially make garbage collection slower if large objects persist in memory.
+"""

@@ -1,3 +1,16 @@
+#Single Responsibility Principle
+"""A class should have only one responsibility.
+If a class handles multiple tasks, it increases coupling and wastes memory by loading unnecessary methods.
+
+After applying SRP, we split it into:
+
+    Employee → Holds only instance data (lightweight).
+    EmployeeDatabase → Manages saving to the database.
+    EmployeeReport → Generates reports separately.
+
+Memory Benefit: Since only relevant objects are created at runtime, unused functionalities don’t consume memory, making garbage collection more efficient. """
+
+
 class Employee:
     def __init__(self, name, salary):
         self.name = name
