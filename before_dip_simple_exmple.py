@@ -27,7 +27,20 @@ class AnimalSpeaker:
     def make_sound(self):
         return self.animal.speak()
 
+
 speaker = AnimalSpeaker("dog")
 print(speaker.make_sound()) 
 speaker = AnimalSpeaker("cat")
 print(speaker.make_sound())
+speaker = AnimalSpeaker("dog")
+print(speaker.make_sound())
+
+"""
+How the memory works here?
+
+-> Each time AnimalSpeaker("dog") is called, a new Dog instance is created.
+-> If AnimalSpeaker("cat") is called later, a new Cat instance is created.
+-> The previous Dog object is lost and waits for garbage collection.
+-> Even if a Dog was created earlier, it is not reused, and a new one is created.
+
+"""
