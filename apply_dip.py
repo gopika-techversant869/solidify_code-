@@ -1,3 +1,8 @@
+
+"""
+------------------Dependency Inversion Principle (DIP)---------------------------------------
+High-level modules should not depend on low-level modules. Both should depend on abstractions"""
+
 from abc import ABC, abstractmethod
 
 # Step 1: Create an abstraction for storage

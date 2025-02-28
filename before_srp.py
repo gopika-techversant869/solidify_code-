@@ -7,7 +7,7 @@ if any of the method is to be changed, it affect the other things in the class.
 
 """
 
-
+import sys
 class Employee:
     def __init__(self, name, salary):
         self.name = name
